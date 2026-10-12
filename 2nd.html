@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body id="home">
+    <div class="img-area">
+        <nav id="navbar">
+            <h2><a href="#home"><span class="text-primary" style="color: red;">Emmanuel </span>Crown</a></h2>
+            <ul>
+                <li><a href="#home">Home</a></li><br><br><br><br>
+                <!-- <li><a href="#about">About</a></li> -->
+                <div id="myNav" class="overlay">
+                    <div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                      <hr>
+                      <h2 style="color: gold;">Contact<span style="color: red;"> Section</span></h2>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>For More Information About Us:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div class="column">
+      <form action="https://www.w3schools.com/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="usa">NIGERIA</option>
+          <option value="usa">CHINA</option>
+          <option value="usa">NEW YORK</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+// Initialize google maps
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<br><br>
+<hr>
+                      <h1>My Skills</h1>
+<hr>
+<p>HTML</p>
+<div class="container" style="width: 100%;
+background-color: #ddd;">
+  <div class="skills html" style="text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; width: 100%; background-color: #4CAF50;">100%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css" style="text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; width: 100%; background-color: #2196F3;">100%</div>
+</div>
+
+<p>Sass</p>
+<div class="container">
+  <div class="skills sass" style="text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; width: 45%; background-color: #f44336;">45%</div>
+</div>
+<p>GIT</p>
+<div class="container">
+  <div class="skills git" style="text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; width: 80%; background-color: #b4db07;">80%</div>
+</div>
+
+<p>Javascript</p>
+<div class="container">
+  <div class="skills js" style="text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; width: 96%; background-color: #4936f4;">96%</div>
+</div>
+
+
+
+<p>Bootstrap</p>
+<div class="container">
+  <div class="skills bs" style="text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; width: 95%; background-color: #808080;">95%</div>
+</div>
+<br><br><br><br><br><hr>
+
+                        <div class="main">
+                            <h1>MYLOGO.COM</h1>
+                            <hr>
+                            
+                            <h2>PORTFOLIO</h2>
+                            
+                            <!-- Portfolio Gallery Grid -->
+                            <div class="row">
+                              <div class="column nature">
+                                <div class="content">
+                                  <img src="mountains.jpg" alt="Mountains" style="width:100%">
+                                  <h4>Mountains</h4>
+                                  
+                                </div>
+                              </div>
+                              <div class="column nature">
+                                <div class="content">
+                                <img src="lights.jpg" alt="Lights" style="width:100%">
+                                  <h4>Lights</h4>
+                                  
+                                </div>
+                              </div>
+                              <div class="column nature">
+                                <div class="content">
+                                <img src="nature.jpg" alt="Nature" style="width:100%">
+                                  <h4>Forest</h4>
+                                  
+                                </div>
+                              </div>
+                              
+                              <div class="column cars">
+                                <div class="content">
+                                  <img src="cars1.jpg" alt="Car" style="width:100%">
+                                  <h4>Retro</h4>
+                                  
+                                </div>
+                              </div>
+                              <!-- <div class="column cars">
+                                <div class="content">
+                                <img src="cars2.jpg" alt="Car" style="width:100%">
+                                  <h4>Fast</h4>
+                                  
+                                </div>
+                              </div> -->
+                              <div class="column cars">
+                                <div class="content">
+                                <img src="cars3.jpg" alt="Car" style="width:100%">
+                                  <h4>Classic</h4>
+                                
+                                </div>
+                              </div>
+                            
+                              <div class="column people">
+                                <div class="content">
+                                  <img src="people1.jpg" alt="Car" style="width:100%">
+                                  <h4>Girl</h4>
+                                </div>
+                              </div>
+                              <div class="column people">
+                                <div class="content">
+                                <img src="people2.jpg" alt="Car" style="width:100%">
+                                  <h4>Man</h4>
+                                  
+                                </div>
+                              </div>
+                              <!-- <div class="column people">
+                                <div class="content">
+                                <img src="people3.jpg" alt="Car" style="width:100%">
+                                  <h4>Woman</h4>
+                                  
+                                </div>
+                              </div> -->
+                            <!-- END GRID -->
+                            </div>
+                            
+                            <!-- END MAIN -->
+                            </div>
+
+                    </div>
+
+                    </div>
+                </div>
+                  
+                  
+                 <span style="border-radius: 5px;margin: 0 1rem;font-size: 1.3rem;transition: background-color 3s;cursor:pointer" onclick="openNav()">ABOUT</span>
+                  
+                  <script>
+                  function openNav() {
+                      document.getElementById("myNav").style.width = "100%";
+                  }
+                  
+                  function closeNav() {
+                      document.getElementById("myNav").style.width = "0%";
+                  }
+                  </script>
+                
+
+
+                <!-- <li><a href="https://www.google.com"><i class="fab fa-facebook-f"></i></a></li> -->
+            </ul>
+        </nav>
+        <!-- <h1 data-text="CREATIVE...">CREATIVE...</h1> -->
+        <header id="showcase">
+            <div class="showcase-content">
+                <div class="container">
+                    <h1>Take You Business To The <br> <span class="text-primary">Next Level</span></h1>
+                    <a href="#about" class="btn">Find OUT HOW</a>
+                </div>
+            </div>
+        </header>
+        <div class="nav">
+            <a class="a active" href="#">HOME</a>
+            <a class="b" href="Aboutme.html">ABOUT ME</a>
+            <a class="c" href="Gallery.html">GALLERY</a>
+            <a class="d" href="Contacts.html">CONTACTS</a>
+        </div>
+
+<!--  wwwww         
+    </div>
+
+    
+</body> 
+</html>

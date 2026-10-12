@@ -1,0 +1,356 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.img-area {
+    width: 100%;
+    height: 100vh;
+    background: url(carousel-mobile-banners.jpg);
+    animation: animate 20s infinite ease-in-out;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate {
+   25% {
+       background: url(Graphic_Designer1920x1080.jpg);
+1       -webkit-background-size: cover;
+       background-size: cover;
+       background-position: center center;
+   }
+   50% {
+        background: url(mynti-banner-new.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+    75% {
+        background: url(homebanner-image.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+    100% {
+        background: url(environmental-banner.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+/* h1 {
+    position: relative;
+    font-size: 14vw; 
+    color: #252839;    
+    -webkit-text-stroke: 8.3vw #383d52;
+    text-transform: uppercase;
+} */
+
+#navbar {
+    background: rgba(0, 0, 0, 0.171);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border-bottom: 3px solid #3693ff;
+    height: 35px;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 3s;
+}
+
+#navbar li a:hover {
+    color: red;
+    background-color: #3693ff;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    background: rgb(0,0,0,0.6);
+    color: red;
+}
+.showcase-content h1 {
+    font-size:3.5rem;
+    margin-bottom: 1rem 10rem;
+}
+.showcase-content .btn {
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+    transition: 1s;
+}
+
+.showcase-content .btn:hover{
+    background: #3694ff48;
+    color: rgba(255, 255, 255, 0.534);
+}
+.btn {
+    color: #3693ff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #3693ff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.nav{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: Impact;
+    font-weight: bold;  
+    height: 90px;
+    margin: 5px 0;
+    float: left;
+    display: inline-block;  
+    background-color: rgba(58, 19, 230, 0.527);
+    color: white;
+    line-height: 90px;
+    text-align: center;
+    transition: 500ms;
+}
+a.active, .nav a:hover{
+    color: black;
+    background-color: rgba(16, 205, 230, 0.61);
+    width: 100%;
+}
+.a{
+    width: 95%;
+}
+.b{
+    width: 80%;
+}
+.c{
+    width: 75%;
+}
+.d{
+    width: 90%;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    /* position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+} */
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+.skills {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+    color: white;
+}
+  
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.contain {
+    position: absolute;
+    
+}
